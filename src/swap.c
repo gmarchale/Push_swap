@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:16:22 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/01/29 13:13:26 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/01/30 16:15:05 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ void	ss(t_list **stack_a, t_list **stack_b)
 
 void	swap_cont(t_list **stack)
 {
-	t_list *first_node;
-	t_list *third_node;
+	t_list	*first_node;
+	t_list	*third_node;
 
 	if (*stack == NULL || (*stack)->next == NULL)
 		return ;
