@@ -6,13 +6,12 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:55:44 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/01 20:23:08 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/01 20:40:05 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-#include <stdio.h>
 t_list	*init_stack(int argc, char **argv)
 {
 	int	i;
@@ -50,7 +49,7 @@ void    print_stack(t_list *head)
     current = head;
     while (current != NULL)
     {
-        printf("%s\n", (char *)current->content);
+        ft_printf("%s\n", (char *)current->content);
         current = current->next;
     }
 }
