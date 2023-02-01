@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:16:22 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/01/30 16:15:05 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/01 19:38:05 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	sa(t_list **stack)
 	if (*stack == NULL || (*stack)->next == NULL)
 		return ;
 	ft_printf("sa\n");
-	swap_cont(*stack);
+	swap_cont(stack);
 }
 
 void	sb(t_list **stack)
