@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/29 13:14:31 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/01/30 16:14:30 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/01 19:36:38 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	pa(t_list **stack_a, t_list **stack_b)
 
 	if (*stack_b == NULL)
 		return ;
-	printf("pa\n");
+	ft_printf("pa\n");
 	first_node_a = *stack_a;
 	first_node_b = *stack_b;
 	*stack_a = first_node_b;
@@ -34,7 +34,7 @@ void	pb(t_list **stack_a, t_list **stack_b)
 
 	if (*stack_a == NULL)
 		return ;
-	printf("pb\n");
+	ft_printf("pb\n");
 	first_node_a = *stack_a;
 	first_node_b = *stack_b;
 	*stack_b = first_node_a;
