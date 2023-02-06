@@ -6,7 +6,7 @@
 #    By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/27 15:27:16 by gmarchal          #+#    #+#              #
-#    Updated: 2023/02/01 19:53:24 by gmarchal         ###   ########.fr        #
+#    Updated: 2023/02/06 17:05:21 by gmarchal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,9 +18,9 @@ FILES =	main.c \
 		reverse_rotate.c \
 		rotate.c \
 		utils.c \
-#		utils2.c \
-		min_sort.c \
+		utils2.c \
 		radix.c \
+#		min_sort.c \
 		normalize_stack.c \
 		errors.c \
 		parsing.c \

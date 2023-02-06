@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:55:44 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/01 20:40:05 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/06 17:07:07 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*init_stack(int argc, char **argv)
 {
-	int	i;
+	int		i;
 	t_list	*head;
 	t_list	*new_node;
 
@@ -44,7 +44,7 @@ t_list	*init_stack(int argc, char **argv)
 
 void    print_stack(t_list *head)
 {
-    t_list *current;
+    t_list	*current;
 
     current = head;
     while (current != NULL)
