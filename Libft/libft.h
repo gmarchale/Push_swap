@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 11:33:46 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/01/29 16:40:29 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/06 19:32:06 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 typedef struct s_list
 {
-	void			*content;
+	int				*content;
 	struct s_list	*next;
 }	t_list;
 
