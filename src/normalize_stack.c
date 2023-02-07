@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   normalize_stack.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 15:54:08 by gmarchal          #+#    #+#             */
-/*   Updated: 2022/10/19 15:54:16 by gmarchal         ###   ########.fr       */
+/*   Created: 2023/02/07 13:44:41 by gmarchal          #+#    #+#             */
+/*   Updated: 2023/02/07 13:47:06 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+int	*init_array(int len_stack, t_list **stack)
 {
-	t_list	*new;
-	t_list	*new_list;
+	int		n;
+	int		*array;
+	t_list	*tmp;
 
-	if (!lst || !f || !del)
-		return (0);
-	new_list = 0;
-	while (lst)
+	array = malloc(sizeof(int) * len_stack);
+	if (!array)
+		return (0); // ou exit pour protection ?
+	n = 0;
+	tmp = *stack;
+	while (n < len_stack)
 	{
-		new = ft_lstnew(f(lst->content));
-		if (!new)
-		{
-			ft_lstclear(&new_list, del);
-			return (0);
-		}
-		ft_lstadd_back(&new_list, new);
-		lst = lst->next;
+		array[n] = tmp->content;
+		n++;
+		tmp = tmp->next;
 	}
-	return (new_list);
+	return (array);
 }

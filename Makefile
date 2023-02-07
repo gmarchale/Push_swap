@@ -6,7 +6,7 @@
 #    By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/27 15:27:16 by gmarchal          #+#    #+#              #
-#    Updated: 2023/02/06 17:05:21 by gmarchal         ###   ########.fr        #
+#    Updated: 2023/02/07 13:46:40 by gmarchal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ FILES =	main.c \
 		utils.c \
 		utils2.c \
 		radix.c \
-#		min_sort.c \
 		normalize_stack.c \
+#		min_sort.c \
 		errors.c \
 		parsing.c \
 		parsing_utils.c \
