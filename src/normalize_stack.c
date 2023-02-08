@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/07 13:44:41 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/07 13:47:06 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/08 11:44:07 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	*init_array(int len_stack, t_list **stack)
 
 	array = malloc(sizeof(int) * len_stack);
 	if (!array)
-		return (0); // ou exit pour protection ?
+		exit(EXIT_FAILURE); //exit ou return
 	n = 0;
 	tmp = *stack;
 	while (n < len_stack)
@@ -31,3 +31,16 @@ int	*init_array(int len_stack, t_list **stack)
 	}
 	return (array);
 }
+/*
+int	sort_array(int *array)
+{
+	int	i;
+	int	n;
+	int	len;
+	int	*new;
+	
+	i = 0;
+	len = ft_strlen(array);
+	while (i
+}
+*/
