@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:09:58 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/08 15:45:39 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/09 14:20:49 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,9 @@ int	*sort_array(int *array)
 	i = 0;
 	len = len_array(array);
 	new = malloc(sizeof(int) * len); // a free
+	if (!new)
+		return (0);
+	ft_bzero(new, len);
 	while (array[i])
 	{
 		n = 0;
@@ -44,7 +47,16 @@ int	*sort_array(int *array)
 				n++;
 			j++;
 		}
+		if (n == 1)
+			printf("n = 1\n");
 		new[n] = array[i];
+		printf("new[%d] = %d\n", n, new[n]);
+		i++;
+	}
+	i = 0;
+	while (i < 10)
+	{
+		printf("%d\n", new[i]);
 		i++;
 	}
 	return (new);
@@ -62,15 +74,17 @@ int	main(int argc, char **argv)
 		return (0);
 	stack_a = init_stack(argc, argv);
 	stack_b = NULL;
-	print_stack(stack_a);
-	ft_printf("Len de la stack: %d\n", len_stack(&stack_a));
+	//print_stack(stack_a);
+	//ft_printf("Len de la stack: %d\n", len_stack(&stack_a));
 	array = init_array(len_stack(&stack_a), &stack_a);
 	i = 0;
 	new = sort_array(array);
+	/*
 	while (new[i])
 	{
 		printf("%d\n", new[i]);
 		i++;
 	}
+	*/
 	return (0);
 }
