@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:17:31 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/07 13:46:23 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/15 15:53:22 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@
 # include"../Libft/libft.h"
 
 t_list	*init_stack(int argc, char **argv);
-void    print_stack(t_list *head);
-int		len_stack(t_list **stack);
+void	print_stack(t_list *head);
 int		get_bits(int max);
-int		*init_array(int len_stack, t_list **stack);
+int		len_array(int *array);
+int		ft_len_stack(t_list **stack);
+t_list	*init_stack(int argc, char **argv);
+void	normalize_stack(t_list **stack);
 
 void	pb(t_list **stack_b, t_list **stack_a);
 void	pa(t_list **stack_b, t_list **stack_a);

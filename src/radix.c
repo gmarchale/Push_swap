@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 14:10:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/06 17:12:42 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/15 15:01:15 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	get_bits(int max)
 {
-	int nb_digits;
+	int	nb_digits;
 
 	nb_digits = 0;
 	while (max != 0)

@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:55:44 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/07 11:35:50 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/15 15:02:00 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,14 @@ t_list	*init_stack(int argc, char **argv)
 	return (head);
 }
 
-void    print_stack(t_list *head)
+void	print_stack(t_list *head)
 {
-    t_list	*current;
+	t_list	*current;
 
-    current = head;
-    while (current != NULL)
-    {
-        ft_printf("%d\n", current->content);
-        current = current->next;
-    }
+	current = head;
+	while (current != NULL)
+	{
+		ft_printf("%d\n", current->content);
+		current = current->next;
+	}
 }

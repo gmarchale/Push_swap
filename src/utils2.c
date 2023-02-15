@@ -6,15 +6,15 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 17:36:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/06 17:41:06 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/15 15:53:02 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	len_stack(t_list **stack)
+int	ft_len_stack(t_list **stack)
 {
-	int i;
+	int		i;
 	t_list	*node;
 
 	if (!stack)
