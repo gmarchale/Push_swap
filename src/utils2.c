@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 17:36:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/15 15:53:02 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/20 18:04:07 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,17 @@ t_list	*find_max(t_list **stack) //ne fonctionne pas vraiment
 		node = node->next;
 	}
 	return (max);
+}
+
+void	free_tab(char **tab)
+{
+	int	i;
+
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
 }

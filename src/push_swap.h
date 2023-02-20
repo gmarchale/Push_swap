@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:17:31 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/15 15:53:22 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/20 18:04:05 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int		len_array(int *array);
 int		ft_len_stack(t_list **stack);
 t_list	*init_stack(int argc, char **argv);
 void	normalize_stack(t_list **stack);
+void	free_tab(char **tab);
 
 void	pb(t_list **stack_b, t_list **stack_a);
 void	pa(t_list **stack_b, t_list **stack_a);
@@ -35,4 +36,6 @@ void	ra(t_list **stack);
 void	sa(t_list **stack);
 void	sb(t_list **stack);
 void	ss(t_list **stack_a, t_list **stack_b);
+
+void	radix_sort(t_list **stack_a, t_list **stack_b);
 #endif

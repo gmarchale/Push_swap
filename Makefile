@@ -6,7 +6,7 @@
 #    By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/27 15:27:16 by gmarchal          #+#    #+#              #
-#    Updated: 2023/02/15 14:45:39 by gmarchal         ###   ########.fr        #
+#    Updated: 2023/02/20 18:33:47 by gmarchal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ SRCS= $(addprefix src/, $(FILES))
 
 OBJ = $(SRCS:.c=.o)
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
 
 ###LIB INCLUDES###
 

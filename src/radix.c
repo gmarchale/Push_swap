@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 14:10:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/20 17:05:08 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/20 20:10:59 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	radix_sort(t_list **stack_a, t_list **stack_b)
 	normalize_stack(stack_a);
 	bits = get_bits(ft_len_stack(stack_a) - 1);
 	i[0] = -1;
-	while (++i[1] < stack_size)
+	while (++i[0] < stack_size)
 	{
 		i[1] = -1;
 		while (++i[1] < stack_size)
