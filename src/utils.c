@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:55:44 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/21 11:15:48 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/22 18:29:48 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,43 @@ void	print_stack(t_list *head)
 }
 
 //void	print_stacks(t_list **stack_a, t_list **stack_b)
+
+int	is_sorted(t_list **stack)
+{
+	t_list	*tmp;
+
+	tmp = *stack;
+	while (tmp->next != NULL)
+	{
+		if (tmp->content > tmp->next->content)
+			return (0);
+		tmp = tmp->next;
+	}
+	return (1);
+}
+
+int	rotate_dir(t_list **stack, t_list *node)
+{
+	t_list	*tmp;
+	int		pos;
+	int		len;
+	int		node_seen;
+
+	pos = 0;
+	len = 0;
+	node_seen = 0;
+	tmp = *stack;
+	while (tmp != NULL)
+	{
+		if (tmp == node)
+			node_seen = 1;
+		if (node_seen == 0)
+			pos++;
+		len++;
+		tmp = tmp->next;
+	}
+	if (pos * 2 <= len)
+		return (1);
+	else
+		return (0);
+}

@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 14:10:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/22 15:48:24 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/22 18:13:58 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,32 @@ void	radix_sort(t_list **stack_a, t_list **stack_b)
 		while (*stack_b)
 			pa(stack_a, stack_b);
 	}
+}
+
+void	min_sort(t_list **stack_a, t_list **stack_b)
+{
+	t_list	*min_addr;
+	t_list	*tmp;
+	int		rotate_up;
+
+	while (is_sorted(stack_a) == 0)
+	{
+		min_addr = find_min(stack_a);
+		rotate_up = rotate_dir(stack_a, min_addr);
+		tmp = *stack_a;
+		while (tmp != min_addr && tmp)
+		{
+			if (rotate_up == 1)
+				ra(stack_a);
+			else
+				rra(stack_a);
+			tmp = *stack_a;
+		}
+		if (is_sorted(stack_a) == 1)
+			break ;
+		if (tmp == min_addr)
+			pb(stack_a, stack_b);
+	}
+	while (*stack_b != NULL)
+		pa(stack_a, stack_b);
 }

@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 17:36:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/20 18:04:07 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/22 17:56:33 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,20 @@ int	ft_len_stack(t_list **stack)
 	return (i);
 }
 
-t_list	*find_max(t_list **stack) //ne fonctionne pas vraiment
+t_list	*find_min(t_list **stack)
 {
-	t_list	*max;
-	t_list	*node;
+	t_list	*tmp;
+	t_list	*min_addr;
 
-	if (!stack)
-		return (0);
-	node = *stack;
-	max = *stack;
-	while (node != NULL)
+	tmp = *stack;
+	min_addr = tmp;
+	while (tmp != NULL)
 	{
-		if (node->content > max->content)
-			max = node;
-		node = node->next;
+		if (min_addr->content > tmp->content)
+			min_addr = tmp;
+		tmp = tmp->next;
 	}
-	return (max);
+	return (min_addr);
 }
 
 void	free_tab(char **tab)
