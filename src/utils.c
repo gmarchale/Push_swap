@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:55:44 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/23 18:50:07 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/24 17:53:02 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ t_list	*init_stack(int argc, char **argv)
 		if (i == 1)
 		{
 			head = ft_lstnew(ft_atoi(argv[i]));
-			//if (head == NULL)
-				//free
+			if (head == NULL)
+				free_stack(&head);
 		}
-		else
+		else;
 		{
 			new_node = ft_lstnew(ft_atoi(argv[i]));
-			//if (new_node == NULL)
-				//free
+			if (new_node == NULL)
+				free_stack(&new_node);
 			ft_lstadd_back(&head, new_node);
 		}
 		i++;
