@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:16:22 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/01 19:38:05 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/26 17:48:19 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ss(t_list **stack_a, t_list **stack_b)
 {
 	if (*stack_a == NULL || (*stack_a)->next == NULL)
 		return ;
-	else if (*stack_b == NULL || (*stack_b)->next == NULL)
+	if (*stack_b == NULL || (*stack_b)->next == NULL)
 		return ;
 	ft_printf("ss\n");
 	swap_cont(stack_a);

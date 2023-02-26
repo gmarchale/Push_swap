@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 16:46:52 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/01/30 17:41:02 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/26 17:49:08 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	reverse_rotate(t_list **stack)
 
 	tmp = *stack;
 	while (tmp->next->next != NULL)
-		tmp = tmp->next;
+			tmp = tmp->next;
 	last_node = tmp->next;
 	tmp->next = NULL;
 	ft_lstadd_front(stack, last_node);
