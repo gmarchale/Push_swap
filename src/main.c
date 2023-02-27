@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:09:58 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/26 16:16:24 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/27 18:25:27 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int	main(int argc, char *argv[])
 		min_sort(&stack_a, &stack_b);
 	else
 		radix_sort(&stack_a, &stack_b);
-	print_stack(stack_a); //delete
+	//printf("delete print avant de tests\n");
+	//print_stack(stack_a); //delete
 	ft_lstclear(&stack_a);
 	return (0);
 }
