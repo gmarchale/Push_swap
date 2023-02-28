@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 11:33:46 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/08 14:22:19 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/02/28 17:37:53 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst);
 void	ft_lstclear(t_list **lst);
 void	ft_lstiter(t_list *lst, void (*f)(int));
+long	ft_atol(const char *str);
 
 #endif
