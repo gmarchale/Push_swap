@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:09:58 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/01 11:35:54 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/01 16:39:21 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(int argc, char *argv[])
 	t_list	*stack_b;
 
 	if (argc == 1)
-		return (0);
+		error();
 	check_input(argc, argv);
 	stack_a = init_stack(argc, argv);
 	stack_b = NULL;
