@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:17:31 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/24 17:51:18 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/01 11:32:35 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ void	free_stack(t_list **stack);
 int		is_sorted(t_list **stack);
 t_list	*find_min(t_list **stack);
 int		rotate_dir(t_list **stack, t_list *node);
+int		check_input(int argc, char **argv);
+void	error(void);
 
 void	pb(t_list **stack_b, t_list **stack_a);
 void	pa(t_list **stack_b, t_list **stack_a);

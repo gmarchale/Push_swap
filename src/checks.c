@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 16:22:05 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/28 18:49:37 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/01 11:35:12 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int	check_duplicates(int argc, char **argv)
 	int	i;
 	int	j;
 
-	i = 0;
-	while (argv[i])
+	i = 1;
+	while (i < argc)
 	{
 		j = i + 1;
 		while (argv[j])
@@ -31,14 +31,14 @@ int	check_duplicates(int argc, char **argv)
 	}
 	return (0);
 }
-
+/*
 int	check_valid_number(int argc, char **argv)
 {
 	int	i;
 
 	i = 0;
 }
-
+*/
 
 int	check_input(int argc, char **argv)
 {
@@ -49,8 +49,5 @@ int	check_input(int argc, char **argv)
 	if (check_duplicates(argc, argv) == 1)
 		error();
 	i = 1;
-	while (argv[i])
-	{
-
-	}
+	return (0);
 }
