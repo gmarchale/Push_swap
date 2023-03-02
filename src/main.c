@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:09:58 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/01 16:39:21 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/02 18:27:13 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int	main(int argc, char *argv[])
 	//printf("delete print avant de tests\n");
 	//print_stack(stack_a); //delete
 	ft_lstclear(&stack_a);
+	//system("leaks push_swap");
 	return (0);
 }

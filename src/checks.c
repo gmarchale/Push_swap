@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 16:22:05 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/01 16:47:58 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/02 19:26:14 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,21 +31,41 @@ int	check_duplicates(int argc, char **argv)
 	}
 	return (0);
 }
-/*
+
 int	check_valid_number(int argc, char **argv)
 {
 	int	i;
+	int	j;
 
-	i = 0;
+	i = 1;
+	while (i < argc)
+	{
+		j = 0;
+		if (argv[i][0] == '-' || argv[i][0] == '+')
+			j++;
+		while (argv[i][j])
+		{
+			if (argv[i][j] >= 48 && argv[i][j] <= 57)
+				j++;
+			else
+			{
+				ft_printf("salut checks.c\n");
+				ft_printf("%d\n", argv[i][j]);
+				return (1);
+			}
+		}
+		i++;
+	}
+	return (0);
 }
-*/
+
 
 int	check_input(int argc, char **argv)
 {
-	int	i;
 
 	if (check_duplicates(argc, argv) == 1)
 		error();
-	i = 1;
+	if (check_valid_number(argc, argv) == 1)
+		error();
 	return (0);
 }
