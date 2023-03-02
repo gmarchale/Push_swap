@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 16:22:05 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/02 19:26:14 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/02 19:50:56 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,6 @@ int	check_valid_number(int argc, char **argv)
 				j++;
 			else
 			{
-				ft_printf("salut checks.c\n");
-				ft_printf("%d\n", argv[i][j]);
 				return (1);
 			}
 		}
