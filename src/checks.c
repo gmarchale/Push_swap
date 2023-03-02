@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 16:22:05 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/02 19:50:56 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/02 22:01:18 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,8 @@ int	check_valid_number(int argc, char **argv)
 	return (0);
 }
 
-
 int	check_input(int argc, char **argv)
 {
-
 	if (check_duplicates(argc, argv) == 1)
 		error();
 	if (check_valid_number(argc, argv) == 1)
