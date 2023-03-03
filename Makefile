@@ -6,7 +6,7 @@
 #    By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/27 15:27:16 by gmarchal          #+#    #+#              #
-#    Updated: 2023/03/02 18:25:32 by gmarchal         ###   ########.fr        #
+#    Updated: 2023/03/03 22:29:29 by gmarchal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,6 @@ FILES =	main.c \
 		normalize_stack.c \
 		errors.c \
 		checks.c \
-#		parsing.c \
-		parsing_utils.c \
 
 SRCS= $(addprefix src/, $(FILES))
 
