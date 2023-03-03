@@ -6,7 +6,7 @@
 /*   By: gmarchal <gmarchal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 15:41:57 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/28 17:39:11 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/03 21:01:11 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ int	ft_atoi(const char *str)
 		i++;
 	while ((str[i] >= '0' && str[i] <= '9' && ++count))
 		result = result * 10 + (str[i++] - '0');
-	if ((result > LLONG_MAX || count > 19) && sign == -1)
-		return (0);
-	else if ((result > LLONG_MAX || count > 19) && sign == 1)
+	if (result == 2147483648 && sign == -1)
+		return (result * sign);
+	if (result > INT_MAX)
 		return (-1);
 	return (result * sign);
 }
