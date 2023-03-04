@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 14:10:21 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/26 16:12:30 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/04 17:46:01 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,31 @@ void	min_sort(t_list **stack_a, t_list **stack_b)
 	}
 	while (*stack_b != NULL)
 		pa(stack_a, stack_b);
+}
+
+void	tri_sort(t_list **stack_a)
+{
+	int	first;
+	int	second;
+	int	third;
+
+	first = (*stack_a)->content;
+	second = (*stack_a)->next->content;
+	third = (*stack_a)->next->next->content;
+	if (first > second && second > third)
+	{
+		ra(stack_a);
+		sa(stack_a);
+	}
+	else if (first > second && second < third && first > third)
+		ra(stack_a);
+	else if (first < second && second > third && first > third)
+		rra(stack_a);
+	else if (first < second && second > third && first < third)
+	{
+		sa(stack_a);
+		ra(stack_a);
+	}
+	else if (first > second && second < third && first < third)
+		sa(stack_a);
 }
