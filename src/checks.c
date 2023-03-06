@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checks.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: gmarchal <gmarchal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 16:22:05 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/03 20:57:57 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/06 22:04:08 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@ int	check_valid_number(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		if (ft_atoi(argv[i]) == -1)
-			error();
 		j = 0;
 		if (argv[i][0] == '-' || argv[i][0] == '+')
 			j++;

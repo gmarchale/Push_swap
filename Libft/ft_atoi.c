@@ -6,13 +6,19 @@
 /*   By: gmarchal <gmarchal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 15:41:57 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/03 21:01:11 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/06 22:02:33 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 static long	ft_create_out(int i, const char *str, int sign);
+
+void	errors(void)
+{
+	write(1, "Error\n", 6);
+	exit(EXIT_FAILURE);
+}
 
 int	ft_atoi(const char *str)
 {
@@ -39,7 +45,7 @@ int	ft_atoi(const char *str)
 	if (result == 2147483648 && sign == -1)
 		return (result * sign);
 	if (result > INT_MAX)
-		return (-1);
+		errors();
 	return (result * sign);
 }
 
