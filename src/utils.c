@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 18:55:44 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/02/26 18:13:35 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/06 20:12:04 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,6 @@ void	print_stack(t_list *head)
 		current = current->next;
 	}
 }
-
-//void	print_stacks(t_list **stack_a, t_list **stack_b)
 
 int	is_sorted(t_list **stack)
 {

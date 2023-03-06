@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:09:58 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/04 17:46:52 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/06 20:11:49 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,6 @@ int	main(int argc, char *argv[])
 	}
 	else
 		radix_sort(&stack_a, &stack_b);
-	//ft_printf("delete print avant de tests\n");
-	//print_stack(stack_a); //delete
 	ft_lstclear(&stack_a);
-	//system("leaks push_swap");
 	return (0);
 }
