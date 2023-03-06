@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/27 17:17:31 by gmarchal          #+#    #+#             */
-/*   Updated: 2023/03/04 17:20:18 by gmarchal         ###   ########.fr       */
+/*   Updated: 2023/03/06 18:15:48 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include "../ft_printf/ft_printf.h"
 # include"../Libft/libft.h"
 
-t_list	*init_stack(int argc, char **argv);
 void	print_stack(t_list *head);
 int		get_bits(int max);
 int		len_array(int *array);
