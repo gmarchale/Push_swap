@@ -14,7 +14,7 @@
 # define PUSH_SWAP_H
 
 # include "../ft_printf/ft_printf.h"
-# include"../Libft/libft.h"
+# include "../Libft/libft.h"
 
 void	print_stack(t_list *head);
 int		get_bits(int max);
